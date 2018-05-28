@@ -2,7 +2,6 @@
 
 OCC_DIR=/usr/local/oce
 OCC_LIB = -lPTKernel \
--lTKAdvTools \
 -lTKBin \
 -lTKBinL \
 -lTKBinTObj \
