@@ -1,3 +1,4 @@
+OCE_DIR=/usr/local/oce
 OCE_LIB_DIR=/usr/local/oce/lib
 
 
@@ -61,8 +62,8 @@ $(OCE_LIB_DIR)/libTKXSBase.so
 
 
 OBJS = step-export-demo.o
-CXXFLAGS = -I/usr/local/oce/include/oce -DLIN -DLININTEL -DHAVE_CONFIG_H -DHAVE_IOSTREAM -DHAVE_FSTREAM -DHAVE_LIMITS_H -I. -g
-LDFLAGS =  -L/usr/local/oce/lib $(OCE_LIBS) $(OCE_LIBS) $(OCE_LIBS) $(OCE_LIBS) -g -lpthread -lX11 -lfreetype -ldl -lGL
+CXXFLAGS = -I$(OCE_DIR)/include/oce -DLIN -DLININTEL -DHAVE_CONFIG_H -DHAVE_IOSTREAM -DHAVE_FSTREAM -DHAVE_LIMITS_H -I. -g
+LDFLAGS =  -L$(OCE_LIB_DIR) $(OCE_LIBS) $(OCE_LIBS) $(OCE_LIBS) $(OCE_LIBS) -g -lpthread -lX11 -lfreetype -ldl -lGL
 
 all:	$(OBJS)
 			g++ -o step-export-demo $(OBJS) $(LDFLAGS)
