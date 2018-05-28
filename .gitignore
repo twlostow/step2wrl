@@ -1,0 +1,4 @@
+*.o
+step2wrl
+export-test/output.stp
+export-test/step-export-demo
