@@ -3,7 +3,6 @@ OCE_LIB_DIR=/usr/local/oce/lib
 
 OCE_LIBS=$(OCE_LIB_DIR)/libFWOSPlugin.so \
 $(OCE_LIB_DIR)/libPTKernel.so \
-$(OCE_LIB_DIR)/libTKAdvTools.so \
 $(OCE_LIB_DIR)/libTKBinL.so \
 $(OCE_LIB_DIR)/libTKBin.so \
 $(OCE_LIB_DIR)/libTKBinTObj.so \
